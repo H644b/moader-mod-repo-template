@@ -1,0 +1,7 @@
+{
+  "name": "Moader Sample Workshop",
+  "description": "An example mod catalog for a fictional game.",
+  "games": [
+    {"titleId": "010000000000F00D", "title": "Orchard Field Notes"}
+  ]
+}

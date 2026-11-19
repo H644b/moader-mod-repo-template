@@ -1,0 +1,39 @@
+name: Publish mod catalog
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate and package
+        env:
+          DEFAULT_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          CUSTOM_BASE: ${{ vars.CATALOG_BASE_URL }}
+        run: python3 tools/build.py --base-url "${CUSTOM_BASE:-$DEFAULT_BASE}"
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@v4

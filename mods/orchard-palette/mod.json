@@ -1,0 +1,14 @@
+{
+  "id": "orchard-palette",
+  "titleId": "010000000000F00D",
+  "title": "Golden hour palette",
+  "author": "Moader Sample Workshop",
+  "category": "Visuals",
+  "summary": "A five-color orchard palette, from sunlit pear to deep spruce.",
+  "description": "This example for a fictional game shows how an author can publish a RomFS package with a preview and a checksum. The archive contains the palette as plain JSON.",
+  "version": "1.0.0",
+  "published": "2026-11-19",
+  "license": "CC0-1.0",
+  "previews": ["golden-hour.png", "swatches.png"],
+  "sources": []
+}
