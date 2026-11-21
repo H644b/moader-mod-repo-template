@@ -31,6 +31,6 @@ The public feed uses `format: "moader.catalog.v1"` and includes a host name, a d
 - Use lowercase letters, digits, underscores, or hyphens for mod IDs, up to 48 characters. Keep the ID stable when updating a release.
 - Add your own JPG or PNG files to the mod’s `previews/` directory and list the filenames in display order. Add optional community mirrors as `{"label":"Host name","url":"https://…"}` to `sources`. The builder adds your own hosted release page automatically.
 - The example uses a fictional Title ID and an original palette. Use the routing Title ID from Moader for a real game and verify the package on the supported game version before publishing.
-- The community Store test build downloads verified packages directly from the catalog. Additional HTTPS feeds can be added to `sdmc:/moader/store/sources.txt`, one URL per line.
+- To list a package in the current Moader Store, upload its ZIP and previews through [Moader Catalog’s Creator studio](https://moader.timsfun.com/studio). The Switch downloads its listings and packages from that catalog.
 
 The template code is MIT licensed. The Orchard sample is CC0. Green Hill Zone and its previews are by Squadaloo and carry their [original license](mods/green-hill-zone/LICENSE). Choose and state your own license for the mods you publish. The cartridge artwork and wordmark identify Moader.
