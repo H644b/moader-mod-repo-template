@@ -31,6 +31,6 @@ The public feed uses `format: "moader.catalog.v1"` and includes a host name, a d
 - Use lowercase letters, digits, underscores, or hyphens for mod IDs, up to 48 characters. Keep the ID stable when updating a release.
 - Add your own JPG or PNG files to the mod’s `previews/` directory and list the filenames in display order. Add optional community mirrors as `{"label":"Host name","url":"https://…"}` to `sources`. The builder adds your own hosted release page automatically.
 - The example uses a fictional Title ID and an original palette. Use the routing Title ID from Moader for a real game and verify the package on the supported game version before publishing.
-- Moader’s preview build keeps the console Store closed. Publishing a repository makes its website and feed available immediately. The native Store client reads subscribed HTTPS feed URLs from `sdmc:/moader/store/sources.txt`, one per line, when Store access is enabled. The preview build leaves subscriptions dormant.
+- The community Store test build downloads verified packages directly from the catalog. Additional HTTPS feeds can be added to `sdmc:/moader/store/sources.txt`, one URL per line.
 
-The template code is MIT licensed. The sample palette, images, and data are offered under CC0. Choose and state your own license for the mods you publish. The cartridge artwork and wordmark identify Moader.
+The template code is MIT licensed. The Orchard sample is CC0. Green Hill Zone and its previews are by Squadaloo and carry their [original license](mods/green-hill-zone/LICENSE). Choose and state your own license for the mods you publish. The cartridge artwork and wordmark identify Moader.

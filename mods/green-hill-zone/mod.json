@@ -1,0 +1,22 @@
+{
+  "id": "green-hill-zone",
+  "titleId": "0100152000022000",
+  "title": "Green Hill Zone",
+  "author": "Squadaloo",
+  "category": "Courses",
+  "summary": "Race through Green Hill Zone in the Sweet Sweet Canyon slot.",
+  "description": "A custom course inspired by Sonic Generations, with its own music and course artwork. Version 1.1.2 revises steer-assist and lap paths.",
+  "version": "1.1.2",
+  "published": "2026-06-11",
+  "license": "CC BY-NC-ND 4.0",
+  "previews": [
+    "course.png",
+    "finish.png"
+  ],
+  "sources": [
+    {
+      "label": "Squadaloo on GameBanana",
+      "url": "https://gamebanana.com/mods/382728"
+    }
+  ]
+}

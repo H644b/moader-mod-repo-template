@@ -1,7 +1,14 @@
 {
   "name": "Moader Sample Workshop",
-  "description": "An example mod catalog for a fictional game.",
+  "description": "Community-hosted mods for Moader and a fictional sample for catalog authors.",
   "games": [
-    {"titleId": "010000000000F00D", "title": "Orchard Field Notes"}
+    {
+      "titleId": "010000000000F00D",
+      "title": "Orchard Field Notes"
+    },
+    {
+      "titleId": "0100152000022000",
+      "title": "Mario Kart 8 Deluxe"
+    }
   ]
 }
